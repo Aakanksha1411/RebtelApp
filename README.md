@@ -57,11 +57,28 @@ These are detailed in the subsequent sections.
 
 ## Data Dependency Pre-requisite
 
-Enter the Phone number with the desired Country code for international calling
+(I) Framework setup:
+The framework requires the provide the nodejspath and the apkpath. Both of these are configurable via the properties file "data.properties" placed in src/main/java/resources
+
+1) nodejspath : This is required because Appium is an HTTP server written in node. js which creates and handles multiple WebDriver sessions for different platforms like iOS and Android.. Note that it is mandatory to set this. 
+   for example, if your node js installation is at the following path :C://your//home//AppData//Roaming//npm//node_modules//appium//build//lib//main.js
+   then set:
+   nodejspath=C://usr//home//AppData//Roaming//npm//node_modules//appium//build//lib//main.js
+   
+2) apkpath : This is the way to inject any version of apk that you want to test. By default, the Rebtels 6.24 version is checked in in the code base just to give a way to 
+   test to the user. However, that apk can be overriden by downloading an apk and providing the path of the apk in this property. For example, if you have downloaded the 
+   rebtel apk at the following location: C://your//home//RebtelApks//Rebtel_ Call, Top-Up, Transfer_6.24.0_Apkpure.apk, then you can set the following property:
+   
+   apkpath=C://your//home//RebtelApks//Rebtel_ Call, Top-Up, Transfer_6.24.0_Apkpure.apk
+
+(II) Test case setup:
+There is a single test case setup which will open the rebtel app and send a verification OTP to the number provided. 
+The phone number to be used as a test number has to be manually edited for now.
+
+Enter the Phone number with the desired Country code for international calling in the file : src\test\java\test\features\Registration.java
+Note: This is hard coded for now, but the test case can be extended to take this input in different ways. This was not done due to time constraints.
 
 <br/>
-
-
 
 ## Execution using command line: mvn commands
 
