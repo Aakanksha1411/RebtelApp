@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-21T16:44:08 CET" name="Suite" finished-at="2023-11-21T16:46:12 CET" duration-ms="124094">
+    <groups>
+    </groups>
+    <test started-at="2023-11-21T16:44:08 CET" name="Test" finished-at="2023-11-21T16:46:12 CET" duration-ms="124094">
+      <class name="test.features.Registeration">
+        <test-method is-config="true" signature="configure()[pri:0, instance:test.features.Registeration@5bd73d1a]" started-at="2023-11-21T16:44:08 CET" name="configure" finished-at="2023-11-21T16:44:42 CET" duration-ms="33746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configure -->
+        <test-method signature="RegisterUser()[pri:0, instance:test.features.Registeration@5bd73d1a]" started-at="2023-11-21T16:44:42 CET" name="RegisterUser" finished-at="2023-11-21T16:46:09 CET" duration-ms="87613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUser -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.features.Registeration@5bd73d1a]" started-at="2023-11-21T16:46:10 CET" name="teardown" finished-at="2023-11-21T16:46:12 CET" duration-ms="2244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.features.Registeration -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
